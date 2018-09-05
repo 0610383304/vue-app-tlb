@@ -1,5 +1,5 @@
 <template>
-  <div>
+<v-parallax src="/pig/ball.jpg" height="649">
     <h1>Chat room</h1>
     <div>
       <v-text-field v-model="name" label="ชื่อ"/>
@@ -11,7 +11,8 @@
         <b>{{ m.name }}</b> พูดว่า {{ m.text }}
       </li>
     </ul>
-  </div>
+    
+    </v-parallax>
 </template>
 <script>
 export default {

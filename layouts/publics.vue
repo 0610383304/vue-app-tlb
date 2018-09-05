@@ -13,14 +13,14 @@
         </v-list>
         </v-navigation-drawer>
     <v-toolbar app class="cyan accent-2">
-      <v-toolbar-title>ตารางคะแนนไทยลีก</v-toolbar-title>
+      <v-toolbar-title>PROGRAM</v-toolbar-title>
       <v-spacer/>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
     </v-toolbar>
     <v-content>
       <nuxt/>
     </v-content>
-     <v-footer class ="cyan accent-2">
+    <v-footer class="pa-3" color="cyan accent-2">
       <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
@@ -28,13 +28,16 @@
 
 <script>
 export default {
+
   data() {
     return {
       items: [
         	{ title: 'Home', icon: 'home', url: '/' },
-          { title: 'search', icon: 'update', url: '/search' },
+        	{ title: 'search', icon: 'updates', url: '/search' },
+        	{ title: 'Booking', icon: 'assignment_turned_in', url: '/booking' },
         	{ title: 'Chat', icon: 'group', url: '/chat' },
-        	{ title: 'Profile', icon: 'lock', url: '/Profile' },
+        	{ title: 'key', icon: 'security', url: '/keyroom' },
+       
       	],
     	}
   },
